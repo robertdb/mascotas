@@ -42,11 +42,11 @@
     .box-1 #list-header-1 li {
       margin-right: 10px; }
     .box-1 #list-header-1 .vertical-line {
-      color: #fff; }
-    .box-1 #list-header-1 .text-li a span {
+      color: #d0cccc; }
+    .box-1 #list-header-1 .text-li a {
       font-family: AmaticSC-Regular;
       font-size: 16px;
-      color: #fff; }
+      color: #d0cccc; }
     .box-1 #list-header-1 .icon-social-net {
       margin-right: 5px; }
     .box-1 #list-header-1 #last-social-net {
@@ -57,3 +57,85 @@
       width: 25px;
       height: 25px;
       border-radius: 50px; }
+
+@media (min-width: 801px) {
+  .box-2 {
+    border-bottom: none; } }
+
+.box-2 {
+  width: 100%;
+  background: #2f2e2e;
+  position: fixed;
+  z-index: 20;
+  top: 100px; }
+
+#btn-menu {
+  display: none; }
+
+#menu-icon {
+  width: 48px;
+  height: 48px;
+  margin-top: 3px;
+  margin-left: 2px; }
+
+.box-2 label {
+  display: none;
+  width: 55px;
+  height: auto; }
+
+.box-2 label:hover {
+  cursor: pointer;
+  background: #2f2e2e; }
+
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.menu li:hover {
+  background: #535353; }
+
+.menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: #d0cccc;
+  text-decoration: none;
+  font-family: AmaticSC-Regular;
+  font-size: 10px; }
+
+@media (max-width: 800px) {
+  #logo {
+    left: 60px; }
+  .box-2 {
+    height: 55px; }
+  .box-2 label {
+    display: block; }
+  .menu {
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    background: #2f2e2e;
+    width: 100%;
+    margin-left: -100%;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 1000; }
+  .menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .menu li {
+    border-top: 1px solid #dbdbdb; }
+  #btn-menu:checked ~ .menu {
+    margin: 0; } }

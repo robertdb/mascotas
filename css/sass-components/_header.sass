@@ -1,4 +1,5 @@
 @import "_colors.sass"
+@import "sass-functions/_mixins.sass"
 
 
 .box-1
@@ -6,7 +7,7 @@
   top: 0
   width: 100%
   height: 100px
-  background-color: $header-color
+  background-color: $header-box1-color
   #logo
     width: 200px
     height: 70px
@@ -27,11 +28,11 @@
     li
       margin-right: 10px
     .vertical-line
-      color: #fff
-    .text-li a span
+      color: $gray
+    .text-li a
       font-family: AmaticSC-Regular
       font-size: 16px
-      color: #fff
+      color: $gray
     .icon-social-net
       margin-right: 5px
     #last-social-net
@@ -42,3 +43,83 @@
       width: 25px
       height: 25px
       border-radius: 50px
+
+// box 2
+@include tablet
+// keep icons
+@include desktop
+  .box-2
+    border-bottom: none
+//-->
+
+
+// Header
+.box-2
+  width: 100%
+  background: $header-box2-color
+  position: fixed
+  z-index: 20
+  top: 100px
+
+#btn-menu
+  display: none
+#menu-icon
+  width: 48px
+  height: 48px
+  margin-top: 3px
+  margin-left: 2px
+
+.box-2 label
+  display: none
+  width: 55px
+  height: auto
+
+.box-2 label:hover
+  cursor: pointer
+  background: $header-box2-color
+
+.menu ul
+  margin: 0
+  list-style: none
+  padding: 0
+  display: flex
+  justify-content: space-between
+
+.menu li:hover
+  background: rgb(83, 83, 83)
+.menu li a
+  display: block
+  padding: 15px 20px
+  color: $gray
+  text-decoration: none
+  font-family: AmaticSC-Regular
+  font-size: 10px
+
+@media (max-width:800px)
+  #logo
+    left: 60px
+  .box-2
+    height: 55px
+  .box-2 label
+    display: block
+
+  .menu
+    position: absolute
+    z-index: 2
+    top: 50px
+    background: $header-box2-color
+    width: 100%
+    margin-left: -100%
+    transition: all 0.5s
+    z-index: 1000
+
+  .menu ul
+    flex-direction: column
+
+  .menu li
+    border-top:  1px solid #dbdbdb
+
+  #btn-menu:checked ~ .menu
+    margin: 0
+
+// Header END
