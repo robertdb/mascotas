@@ -1,10 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
 @font-face {
   font-family: 'Amatic-Bold';
   src: URL("../../fonts/amatic/Amatic-Bold.ttf") format("ttf"); }
-
-@font-face {
-  font-family: 'AmaticSC-Regular';
-  src: URL("../../fonts/amatic/AmaticSC-Regular.ttf") format("ttf"); }
 
 .box-1 {
   position: fixed;
@@ -44,7 +41,7 @@
     .box-1 #list-header-1 .vertical-line {
       color: #d0cccc; }
     .box-1 #list-header-1 .text-li a {
-      font-family: AmaticSC-Regular;
+      font-family: 'Amatic SC';
       font-size: 16px;
       color: #d0cccc; }
     .box-1 #list-header-1 .icon-social-net {
@@ -108,8 +105,8 @@
   padding: 15px 20px;
   color: #d0cccc;
   text-decoration: none;
-  font-family: AmaticSC-Regular;
-  font-size: 10px; }
+  font-family: 'Amatic SC';
+  font-size: 20px; }
 
 @media (max-width: 800px) {
   #logo {
@@ -139,3 +136,21 @@
     border-top: 1px solid #dbdbdb; }
   #btn-menu:checked ~ .menu {
     margin: 0; } }
+
+.box-3 {
+  position: fixed;
+  top: 144px; }
+  .box-3 .presentation-dogs {
+    position: relative; }
+    .box-3 .presentation-dogs .img-dog {
+      width: 100%;
+      height: 300px; }
+    .box-3 .presentation-dogs #title-dog-1 {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      font-family: 'Amatic SC';
+      padding: 15px;
+      font-size: 60px; }
+      .box-3 .presentation-dogs #title-dog-1 span {
+        font-family: 'Amatic-Bold'; }
