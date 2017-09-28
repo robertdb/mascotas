@@ -10,21 +10,26 @@
   height: 100px;
   background-color: #222121; }
   .box-1 #logo {
-    width: 200px;
-    height: 70px;
+    width: 150px;
+    height: 60px;
     position: absolute;
-    top: 20px;
+    top: 25px;
     left: 15px; }
   .box-1 #sub-logo {
     position: absolute;
     right: 10px;
     top: 32px; }
   .box-1 #list-header-1 {
-    list-style: none;
+    visibility: hidden; }
+
+@media (min-width: 768px) {
+  .box-1 #list-header-1 {
+    visibility: visible;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    list-style: none;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-flow: row nowrap;
@@ -53,11 +58,7 @@
       min-height: 25px;
       width: 25px;
       height: 25px;
-      border-radius: 50px; }
-
-@media (min-width: 801px) {
-  .box-2 {
-    border-bottom: none; } }
+      border-radius: 50px; } }
 
 .box-2 {
   width: 100%;
@@ -102,13 +103,13 @@
 
 .menu li a {
   display: block;
-  padding: 15px 20px;
+  padding: 3px 20px;
   color: #d0cccc;
   text-decoration: none;
   font-family: 'Amatic SC';
-  font-size: 20px; }
+  font-size: 18px; }
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
   #logo {
     left: 60px; }
   .box-2 {

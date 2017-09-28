@@ -1,11 +1,19 @@
-@mixin smartphone
-  @media (max-width: 480px)
+@mixin small-smartphone
+  @media (min-width: 320px) and (max-width: 575px)
+    @content
+
+@mixin regular-smartphone
+  @media (min-width: 576px) and (max-width: 767px)
     @content
 
 @mixin tablet
-  @media (min-width: 480px) and (max-width: 800px)
+  @media (min-width: 768px) 
     @content
 
 @mixin desktop
-  @media (min-width: 801px)
+  @media (min-width: 992px)
+    @content
+
+@mixin wide-desktop
+  @media (min-width: 1200px)
     @content
