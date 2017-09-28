@@ -190,6 +190,7 @@
       height: 150px; }
     .box-3 .presentation-dogs #title-dog-1 {
       position: absolute;
-      top: 30px;
-      left: 10px;
-      font-family: 'Amatic SC'; }
+      top: 10px;
+      left: 30px;
+      font-family: 'Amatic SC';
+      font-size: 45px; }
