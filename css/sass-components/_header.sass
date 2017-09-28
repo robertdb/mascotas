@@ -2,6 +2,7 @@
 
 
 // Mobile first
+// BOX 1
 .box-1
   position: fixed
   top: 0
@@ -20,6 +21,38 @@
     top: 32px
   #list-header-1
     visibility: hidden
+
+
+// BOX 3
+// Mobile first
+.box-3
+  width: 100%
+  position: fixed
+  top: 160px
+  .presentation-dogs
+    position: relative
+    width: 100%
+    .img-dog
+      width: 100%
+      height: 300px
+    #title-dog-1
+      position: absolute
+      top: 75px
+      left: 15px
+      font-family: 'Amatic SC'
+      font-size: 50px
+
+// BOX 3
+// Mobile first
+// REGULAR SMARTPHONES
+@include regular-smartphone
+  #title-dog-1
+    margin-left: 40px
+
+
+
+
+// BOX 1 Tablet
 @include tablet
   .box-1
     #list-header-1
@@ -48,9 +81,15 @@
         width: 25px
         height: 25px
         border-radius: 50px
+  // BOX 3
+  // Mobile first
+  // REGULAR SMARTPHONES
+  #title-dog-1
+    margin-left: 80px
+    
 
-// box 2
-// CLARIFICATION: box 2 does not respect mobile first
+// BOX 2
+// CLARIFICATION: BOX 2 does not respect mobile first
 .box-2
   width: 100%
   background: $header-box2-color
@@ -146,22 +185,3 @@
 
   #btn-menu:checked ~ .menu
     margin: 0
-
-// box 3
-// Mobile first
-.box-3
-  width: 100%
-  position: fixed
-  top: 160px
-  .presentation-dogs
-    position: relative
-    width: 100%
-    .img-dog
-      width: 100%
-      height: 150px
-    #title-dog-1
-      position: absolute
-      top: 10px
-      left: 30px
-      font-family: 'Amatic SC'
-      font-size: 45px
