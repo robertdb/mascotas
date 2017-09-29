@@ -212,6 +212,11 @@ body {
     font-size: 3em;
     font-family: 'Amatic SC'; }
 
+p {
+  text-align: center;
+  margin-left: 90px;
+  margin-right: 90px; }
+
 @media (min-width: 576px) {
   .title-text h2 {
     font-size: 3.5em; } }
