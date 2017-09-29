@@ -223,3 +223,23 @@ body {
 @media (min-width: 992px) {
   .title-text h2 {
     font-size: 5em; } }
+
+.dogs-pointer:hover .box-dog-1 {
+  background-color: #fff; }
+
+.box-dog-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  background-color: #ededed; }
+  .box-dog-1 h3 {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Amatic SC';
+    color: #797676; }
