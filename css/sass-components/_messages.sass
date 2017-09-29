@@ -1,0 +1,23 @@
+.title-text
+  text-align: center
+  h2
+    color: $turquoise-color
+    font-weight: normal
+    font-size: 3em
+    font-family: 'Amatic SC'
+
+
+@include regular-smartphone
+  .title-text
+    h2
+      font-size: 3.5em
+
+@include tablet
+  .title-text
+    h2
+      font-size: 4em
+
+@include desktop
+  .title-text
+    h2
+      font-size: 5em

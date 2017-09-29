@@ -3,9 +3,13 @@
   font-family: 'Amatic-Bold';
   src: URL("../../fonts/amatic/Amatic-Bold.ttf") format("ttf"); }
 
+body {
+  padding-top: 135px; }
+
 .box-1 {
   position: fixed;
   top: 0;
+  z-index: 10;
   width: 100%;
   height: 100px;
   background-color: #222121; }
@@ -23,11 +27,10 @@
     visibility: hidden; }
 
 .box-3 {
-  width: 100%;
-  position: fixed;
-  top: 160px; }
+  width: 100%; }
   .box-3 .presentation-dogs {
     position: relative;
+    z-index: 0;
     width: 100%; }
     .box-3 .presentation-dogs .img-dog {
       width: 100%;
@@ -200,3 +203,23 @@
     border-top: 1px solid #dbdbdb; }
   #btn-menu:checked ~ .menu {
     margin: 0; } }
+
+.title-text {
+  text-align: center; }
+  .title-text h2 {
+    color: #23b1c4;
+    font-weight: normal;
+    font-size: 3em;
+    font-family: 'Amatic SC'; }
+
+@media (min-width: 576px) {
+  .title-text h2 {
+    font-size: 3.5em; } }
+
+@media (min-width: 750px) {
+  .title-text h2 {
+    font-size: 4em; } }
+
+@media (min-width: 992px) {
+  .title-text h2 {
+    font-size: 5em; } }
