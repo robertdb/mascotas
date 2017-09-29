@@ -4,7 +4,8 @@
   src: URL("../../fonts/amatic/Amatic-Bold.ttf") format("ttf"); }
 
 body {
-  padding-top: 135px; }
+  padding-top: 135px;
+  padding-bottom: 300px; }
 
 .box-1 {
   position: fixed;
@@ -207,7 +208,7 @@ body {
 .title-text {
   text-align: center; }
   .title-text h2 {
-    color: #23b1c4;
+    color: #00C5C3;
     font-weight: normal;
     font-size: 3em;
     font-family: 'Amatic SC'; }
@@ -262,3 +263,91 @@ p {
 
 .box-dogs-2 {
   max-width: 300px; }
+
+#dogs-3 .box-dogs-2 {
+  margin-right: 20px;
+  margin-bottom: 10px; }
+
+body {
+  position: relative; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  background-color: #00C5C3; }
+  footer #copyright {
+    text-align: center;
+    background-color: #0f0f0f; }
+    footer #copyright span {
+      color: #fff;
+      font-size: 10px; }
+  footer .social-net {
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-right: 25px; }
+    footer .social-net li {
+      margin-right: 5px; }
+    footer .social-net img {
+      width: 40px;
+      height: 40px; }
+  footer .politics {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    list-style: none;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap; }
+    footer .politics a {
+      font-family: 'Amatic SC';
+      color: #fff;
+      padding: 0;
+      margin: 0;
+      font-size: 20px; }
+    footer .politics .line {
+      display: none; }
+  footer .line-divider {
+    margin-top: 20px;
+    height: 1px;
+    background: #63ced5;
+    border-bottom: 1px solid #53d3f0;
+    width: 100%; }
+  footer p {
+    margin-top: 20px;
+    color: #fff; }
