@@ -44,7 +44,8 @@ body {
     .box-3 .presentation-dogs #get-puppy {
       position: absolute;
       right: 20px;
-      bottom: -60px; }
+      bottom: -60px;
+      display: none; }
       .box-3 .presentation-dogs #get-puppy img {
         border-radius: 100px; }
 
@@ -90,7 +91,14 @@ body {
       height: 25px;
       border-radius: 50px; }
   #title-dog-1 {
-    margin-left: 80px; } }
+    margin-left: 80px; }
+  .box-3 .presentation-dogs #get-puppy {
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: -60px; }
+    .box-3 .presentation-dogs #get-puppy img {
+      border-radius: 100px; } }
 
 .box-2 {
   width: 100%;
