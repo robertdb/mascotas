@@ -1,5 +1,6 @@
 body
   position: relative
+  padding-bottom: 450px
 
 footer
   position: absolute
@@ -24,7 +25,7 @@ footer
     margin: 0
     padding: 0
     margin-top: 20px
-    margin-right: 25px
+    margin-right: 40px
     li
       margin-right: 5px
     img
@@ -43,7 +44,7 @@ footer
       color: #fff
       padding: 0
       margin: 0
-      font-size: 20px
+      font-size: 25px
     .line
       display: none
   .line-divider
@@ -55,3 +56,35 @@ footer
   p
     margin-top: 20px
     color: #fff
+
+@include regular-smartphone
+  body
+    padding-bottom: 415px
+  footer
+    .social-net
+      margin-right: 80px
+    .politics
+      a
+        font-size: 30px
+    p
+      font-size: 14px
+
+@include tablet
+  body
+    padding-bottom: 280px
+  footer
+    .social-net
+      margin: 0
+      padding: 0
+      margin-top: 20px
+    .politics
+      flex-flow: row
+      li
+        margin: 0
+        padding: 0
+        margin-left: 5px
+        margin-right: 5px
+      .line
+        display: block
+        color: #fff
+        font-size: 25px

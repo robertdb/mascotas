@@ -4,8 +4,7 @@
   src: URL("../../fonts/amatic/Amatic-Bold.ttf") format("ttf"); }
 
 body {
-  padding-top: 135px;
-  padding-bottom: 300px; }
+  padding-top: 135px; }
 
 .box-1 {
   position: fixed;
@@ -269,7 +268,8 @@ p {
   margin-bottom: 10px; }
 
 body {
-  position: relative; }
+  position: relative;
+  padding-bottom: 450px; }
 
 footer {
   position: absolute;
@@ -311,7 +311,7 @@ footer {
     margin: 0;
     padding: 0;
     margin-top: 20px;
-    margin-right: 25px; }
+    margin-right: 40px; }
     footer .social-net li {
       margin-right: 5px; }
     footer .social-net img {
@@ -339,7 +339,7 @@ footer {
       color: #fff;
       padding: 0;
       margin: 0;
-      font-size: 20px; }
+      font-size: 25px; }
     footer .politics .line {
       display: none; }
   footer .line-divider {
@@ -351,3 +351,36 @@ footer {
   footer p {
     margin-top: 20px;
     color: #fff; }
+
+@media (min-width: 576px) {
+  body {
+    padding-bottom: 415px; }
+  footer .social-net {
+    margin-right: 80px; }
+  footer .politics a {
+    font-size: 30px; }
+  footer p {
+    font-size: 14px; } }
+
+@media (min-width: 750px) {
+  body {
+    padding-bottom: 280px; }
+  footer .social-net {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px; }
+  footer .politics {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row; }
+    footer .politics li {
+      margin: 0;
+      padding: 0;
+      margin-left: 5px;
+      margin-right: 5px; }
+    footer .politics .line {
+      display: block;
+      color: #fff;
+      font-size: 25px; } }
