@@ -360,7 +360,7 @@ footer {
     margin-top: 20px;
     height: 1px;
     background: #63ced5;
-    border-bottom: 1px solid #53d3f0;
+    border-bottom: 1px dotted #fff;
     width: 100%; }
   footer p {
     margin-top: 20px;
