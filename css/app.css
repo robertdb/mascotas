@@ -224,6 +224,12 @@ body {
   .title-text h2 {
     font-size: 5em; } }
 
+#box-dogs {
+  text-align: center; }
+
+.dogs-pointer {
+  display: inline-block; }
+
 .dogs-pointer:hover .box-dog-1 {
   background-color: #fff; }
 
@@ -237,7 +243,8 @@ body {
   -webkit-flex-flow: column wrap;
   -ms-flex-flow: column wrap;
   flex-flow: column wrap;
-  background-color: #ededed; }
+  background-color: #ededed;
+  max-width: 300px; }
   .box-dog-1 h3 {
     text-align: center;
     font-size: 2em;
